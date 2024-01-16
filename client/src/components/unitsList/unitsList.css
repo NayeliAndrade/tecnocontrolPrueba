@@ -5,6 +5,14 @@
   gap: 1rem;
 }
 
+.units-list__title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.units-list__paragraph {
+  margin: 0;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -15,7 +23,7 @@
 }
 
 .card:active {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .card__main {
