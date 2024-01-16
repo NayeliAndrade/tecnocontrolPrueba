@@ -10,7 +10,7 @@ const EventsList = ({ unitSelected }) => {
 
     //Almacenar ultimo evento en la base de datos
     const uploadDataEvents = async (lastEvent) => {
-        await axios.post("http://localhost:4000/createEvents", lastEvent)
+        await axios.post(`${import.meta.env.VITE_BACKEND_URL}/createEvents`, lastEvent)
     }
     //Función asíncrona para realizar las peticiones de los eventos
     const getEventsFromUnit = async (unit) => {

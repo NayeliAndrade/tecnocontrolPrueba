@@ -5,7 +5,7 @@ const ReportsList = () => {
     const [reports, setReports] = useState([]);
 
     const getReportsFromOwnBackend = async () => {
-        const response = await axios.get("http://localhost:4000/getAllEvents");
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/getAllEvents`);
         setReports(response.data);
     }
 
