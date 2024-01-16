@@ -9,8 +9,13 @@
   display: flex;
   flex-direction: column;
   border-radius: 0.25rem;
-  box-shadow: 0 0 0 0.1rem #ede9fe;
+  box-shadow: 0 0 0 0.2rem #967dff;
   cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.card:active {
+  transform: scale(1.1);
 }
 
 .card__main {
