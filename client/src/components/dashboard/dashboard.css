@@ -1,6 +1,6 @@
 .dashboard {
   display: flex;
-  gap: 0 2rem;
+  gap: 2rem;
   padding: 1rem 2rem;
   flex-direction: column-reverse;
 }
