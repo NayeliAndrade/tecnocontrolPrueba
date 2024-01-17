@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-//import ErrorPage from './errorPage.jsx'
 import App from './App.jsx'
 
 

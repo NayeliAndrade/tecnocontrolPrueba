@@ -2,4 +2,11 @@
   display: flex;
   gap: 0 2rem;
   padding: 1rem 2rem;
+  flex-direction: column-reverse;
+}
+
+@media (width >= 768px) {
+  .dashboard {
+  flex-direction: row;
+}
 }
