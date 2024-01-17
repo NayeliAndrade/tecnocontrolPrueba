@@ -35,7 +35,11 @@ const Map = ({ latLng }) => {
 
         // Validación para crear en pantalla el marcador
         if (lat && lon) {
-            const marker = L.marker([lat, lon]);
+            const icon = L.icon({
+                iconUrl: "/marker.png",
+                iconSize: [25, 41]
+            })
+            const marker = L.marker([lat, lon], { icon });
 
             const popupContent = `<p>Latitud: ${lat}</p><p>Longitud: ${lon}</p>`;
 
